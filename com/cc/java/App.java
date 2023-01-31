@@ -4,28 +4,22 @@ public class App {
     
     public static void main(String[] args) {
 
-      Cat cat = new Cat("Grizabella", "white", 29);
-      
-      // Instanziierung class --> object / instance
+        Cat cat = new Cat("Grizabella", "white", 29);
+        // Instanziierung class --> object / instance
       // Cat --> Referenztyp
       // cat --> Referenzvariabl
-        output(cat.tellYourName());
-        output(cat.tellYourFurColor());
-        output(String.valueOf(cat.tellYourAge()));  
-
-        output("Blick von aussen: " + cat);
-        output(cat.tellYourAddress());
+      
+        output(cat.getName());
+        output(cat.getFurColor());
+        output(String.valueOf(cat.getAge()));  
 
         output("-------------------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-        output(cat2.tellYourName());
-        output(cat2.tellYourFurColor());
-        output(String.valueOf(cat2.tellYourAge())); 
-
-        output("Blick von aussen: " + cat2);
-        output(cat2.tellYourAddress());
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(String.valueOf(cat2.getAge())); 
 
     }
 
@@ -35,6 +29,3 @@ public class App {
 
 }
 
-  // Instanziierung class --> object / instance
-    // Cat --> Referenztyp
-    // cat --> Referenzvariabl
