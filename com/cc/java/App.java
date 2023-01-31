@@ -16,14 +16,15 @@ public class App {
     cat.age = 29;
 
 
-       output(cat.name);
-       output(cat.furColor);
-       output(String.valueOf(cat.age));
-       output("Blick von aussen " + cat);
+    output(cat.tellYourName());
+    output(cat.tellYourFurColor());
+    output(String.valueOf(cat.tellYourAge()));
+       
+    output("Blick von aussen " + cat);
     output(cat.tellYourAddress());  
 
 
-    System.out.println("--------------------");
+    output("--------------------");
 
     Cat cat2 = new Cat();
 
@@ -35,6 +36,7 @@ public class App {
     output(cat.name);
     output(cat.furColor);
     output(String.valueOf(cat.age));
+    
     output("Blick von aussen: "+  cat2);
     output(cat2.tellYourAddress());
     }
