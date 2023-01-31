@@ -4,20 +4,30 @@ public class App {
     
     public static void main(String[] args) {
     
+      
     // Instanziierung class --> object / instance
     // Cat --> Referenztyp
     // cat --> Referenzvariable
 
     Cat cat = new Cat();
-    System.out.println("Blick von aussen " + cat);
+
+    cat.name = "Grizabella";
+    cat.furColor = "white";
+    cat.age = 29;
+
+
+       output(cat.name);
+       output(cat.furColor);
+       output(String.valueOf(cat.age));
+       output("Blick von aussen " + cat);
     output(cat.tellYourAddress());  
 
 
-    System.out.println("--------------------");
+    // System.out.println("--------------------");
 
-    Cat cat2 = new Cat();
-    output("Blick von aussen: "+  cat2);
-    output(cat2.tellYourAddress());
+    // Cat cat2 = new Cat();
+    // output("Blick von aussen: "+  cat2);
+    // output(cat2.tellYourAddress());
     }
 
   public static void output(String outputStr) {
