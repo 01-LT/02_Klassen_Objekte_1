@@ -5,13 +5,13 @@ public class App {
     public static void main(String[] args) {
 
         Cat cat = new Cat("Grizabella", "white", 29);
-        // Instanziierung class --> object / instance
-      // Cat --> Referenztyp
-      // cat --> Referenzvariabl
-      
+
         output(cat.getName());
         output(cat.getFurColor());
         output(String.valueOf(cat.getAge()));  
+
+        cat.setFurColor("grey");
+        output(cat.getFurColor());
 
         output("-------------------------");
 
@@ -29,3 +29,6 @@ public class App {
 
 }
 
+// Instanziierung class --> object / instance
+      // Cat --> Referenztyp
+      // cat --> Referenzvariabl
