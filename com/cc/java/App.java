@@ -23,11 +23,20 @@ public class App {
     output(cat.tellYourAddress());  
 
 
-    // System.out.println("--------------------");
+    System.out.println("--------------------");
 
-    // Cat cat2 = new Cat();
-    // output("Blick von aussen: "+  cat2);
-    // output(cat2.tellYourAddress());
+    Cat cat2 = new Cat();
+
+    cat.name = "Alonzo";
+    cat.furColor = "grey";
+    cat.age = 35;
+
+    
+    output(cat.name);
+    output(cat.furColor);
+    output(String.valueOf(cat.age));
+    output("Blick von aussen: "+  cat2);
+    output(cat2.tellYourAddress());
     }
 
   public static void output(String outputStr) {
