@@ -12,8 +12,6 @@ public Cat(String name, String furColor, int age) {
     this.age = age;
   }
 
-
-
 public String getName() {
   if (checkPermission()) {
     return name;
@@ -46,7 +44,7 @@ public void setAge(int age) {
 }
 
 public boolean checkPermission() {
-  return false;
+  return true;
 }  
 
 }
